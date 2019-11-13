@@ -4,16 +4,16 @@ describe DockingStation do
  
     it "releases a bike that is working" do
         expect(subject.release_bike).to be_working
-
     end
+
     it {is_expected.to respond_to(:dock_bike)}
+
+    it {is_expected.to respond_to(:dock_bike).with(1).argument}
 
 end
 
 describe Bike do
     it {is_expected.to respond_to(:working?)}
-
-   
 end
 
 
