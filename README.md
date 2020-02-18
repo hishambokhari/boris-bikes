@@ -2,6 +2,7 @@ Boris Bike Challenge
 Outline | Task | Installation Instructions | Feature Tests | User Stories | Objects & Methods |
 
 Outline
+
 Hello! This is the Week_1 pairing challenge project, Boris Bikes! 🚲
 
 We've been commissioned by Transport for London, the body responsible for delivery of a new bike system, to build the best bike system in London. 🚀
@@ -9,9 +10,11 @@ We've been commissioned by Transport for London, the body responsible for delive
 We're going to create a network of docking stations and bikes that anyone can use. By building a program that will emulate all the docking stations, bikes, and infrastructure (repair staff, and so on) required to make their dream into a reality.
 
 The Task
+
 Throughout the course of the project we we’re given several User Stories which are listed below. We started to determine which parts of the User Story are Objects and which are Methods. As in all TDD we created a test for a feature that we wanted to manipulate and then wrote the code to pass those tests.
 
 Installation Instructions
+
 Clone the repository from github then change directory into it.
 
 $ git clone git@github.com:BenSheridanEdwards/Boris_Bikes.git
@@ -97,18 +100,5 @@ I'd like docking stations not to release broken bikes.
 As a maintainer of the system,
 So that I can manage broken bikes and not disappoint users,
 I'd like docking stations to accept returning bikes (broken or not).
-Objects & Methods
-Bike
-Methods	Description
-Bike.new	Creates a new instance of a bike
-.working?	Checks if the bike is working
-.broken?	Checks if the bike is broken
-.report_broken	Reports the bike as broken
-DockingStation
-Methods	Description
-DockingStation.new	Creates a new instance of a docking station
-.bikes	returns an array of all docked bikes
-.dock(bike)	docks a bike in the station
-.release	releases a docked bike from the station if one is available
-.full?	returns true if the bike dock is full
-.empty?	returns true if the bike dock is empty
+
+
