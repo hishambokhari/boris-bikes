@@ -1,18 +1,17 @@
-class DockingStation 
+require_relative 'bike'
+
+
+class DockingStation
 
     attr_reader :bike
-
     def release_bike
-        Bike.new
+    fail 'No bikes available' unless @bike
+    
     end
 
-    def dock_bike(bike)
-        @bike = bike
-    end
-end
 
-class Bike
-    def working?
-        true
+    def dock(bike)
+    bike #removed @bike = bike from here since attr_reader was created above
     end
+   
 end
