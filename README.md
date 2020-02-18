@@ -31,18 +31,10 @@ Feature Tests (How it works)
 2.6.3 :003 > station = DockingStation.new
 2.6.3 :004 > bike = Bike.new
 
-# To report your bike as broken, use .report_broken
+ To report your bike as broken, use .report_broken
 2.6.3 :005 > bike.report_broken
 2.6.3 :006 > bike.working?
  => false
-
-# To dock at station, use .dock on the station and pass the bike as an argument,
-# you can then see bikes inside the station with .bikes
-# This will fail if the docking station is full
-
-2.6.3 :005 > station.dock(bike)
-2.2.3 :008 > station.bike_dock
- => [#<Bike:0x007fdb4d9b5250 @working=true>]
 
 
 User Stories:
